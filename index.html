@@ -98,6 +98,19 @@
 				str = $("#codigo").val();
 				str = str.replace(/([\uE000-\uF8FF]|\uD83C[\uDF00-\uDFFF]|\uD83D[\uDC00-\uDDFF])/g, '');
 				str = str.replace(/!/g,'');
+				str = str.replace(/_/g,'-');
+				str = str.split("\/");
+console.log(str);
+
+				var barra = "";
+
+				str.forEach(function(ent) {
+				
+					barra += ent + " / ";
+				});
+				str = barra;
+
+
 				str = str.replace(/ \/ /g, "&");
 				str2 = str.replace(/  +/g, '#');
 				str3 = str2.replace(/\s+/g, '');
