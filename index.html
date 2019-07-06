@@ -129,7 +129,8 @@ console.log(str);
 
 				if(final){
 					$(".a").hide();
-					$("#resultado").html("<h1>"+final+"</h1><a href='#' class='btn btn-danger' id='reseta' style='margin-top:20px;'>TRADUZIR OUTRO COMANDO</a>");
+										
+					$("#resultado").html("<h1>"+final+"</h1><a href='#' class='btn btn-danger' id='reseta' style='margin-top:20px;'>TRADUZIR OUTRO COMANDO</a><br><h4>carlosMorse</h4><br><img  src='pavo.jpg'  class='responsive-img img-responsive' /><br>");
 					$("#resultado").show();
 					$(document).delegate('#reseta', 'click', function(e){
 						e.preventDefault();
@@ -144,14 +145,14 @@ console.log(str);
 
 		<style>
 		body{
-	    	background: url(pavo.jpg) no-repeat bottom center;
+	    	/*background: url(pavo.jpg) no-repeat bottom center;*/
 		}
 
 		.section-center__full {
-		  height: 100vh;
+/*		  height: 100vh;
 		  display: flex;
 		  justify-content: center;
-		  align-items: center;
+		  align-items: center;*/
 		}
 
 		h1,h2,h3,h4,h5,h6{
@@ -170,14 +171,17 @@ console.log(str);
 
 
 			<section id="header">
-				<div class="container-fluid">
+				<div class="container-fluid text-center">
 					<div class="row">
 						<div class="section-center__full">
 						<div id="resultado" class="animated fadeIn" style="display: none;"></div>
 							<div class="row">
 								<div class="section-center__full text-center">
 
+
 									<form action="" class="a">
+
+										<img src="pavo.jpg" alt="" class="responsive-img img-responsive" /><br>
 														<div class="row"><div class="col-xs-12 text-center">
 							<h4>🇧🇷 SOUTH AMERICA INTELLIJENCE 🇧🇷</h4><br>
 							<h5>🇧🇷 COMANDOS MORSE 🇧🇷</h5><br>
@@ -191,6 +195,17 @@ console.log(str);
 							</div>
 						</div>
 					</div>
+					<div class="row" ><br>
+		<h3>OUTROS APPS</h3>
+		<!-- <a class="text-center btn btn-active" href="https://coreilabs.github.io/carlosMorse/" target="_BLANK"> TRADUTOR DE CARLOS MORSE</a><br> -->
+		<a class="text-center btn btn-active" href="https://coreilabs.github.io/seunomecomunista/" target="_BLANK"> DESCUBRA SEU NOME COMUNISTA</a><br>
+		<a class="text-center btn btn-active" href="https://coreilabs.github.io/embaralhadorSONARO/" target="_BLANK"> EMBARALHADOR DE PLAVRAS SONARO</a><br>
+		<a class="text-center btn btn-active" href="https://coreilabs.github.io/comandosLeeBra/" target="_BLANK"> TEXTO PARA LIBRAS - COMANDOS LEE BRA</a><br>
+		
+
+
+<!-- https://coreilabs.github.io/comandosLeeBra/ -->
+	</div>
 				</div>
 			</section>
 		</body>
